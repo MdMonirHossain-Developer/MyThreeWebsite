@@ -9,56 +9,56 @@
 <link rel="stylesheet" href="style.css">
 </head>
 <body>
-  <header class="z-50">
-  <!--top navbar-->  
-    <nav>
-      <div class="navbar bg-base-100 overflow-hidden">
-        <div class="navbar-start">
-          <div class="dropdown">
-            <div tabindex="0" role="button" class="btn btn-ghost lg:hidden">
-              <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h8m-8 6h16" /></svg>
-            </div>
-            <ul tabindex="0" class="menu menu-sm dropdown-content mt-3 z-[1] p-2 shadow bg-base-100 rounded-box w-52">
-              <li><a>Item 1</a></li>
-              <li>
-                <a>Parent</a>
-                <ul class="p-2">
-                  <li><a>Submenu 1</a></li>
-                  <li><a>Submenu 2</a></li>
-                </ul>
-              </li>
-              <li><a>Item 3</a></li>
+  <header>
+  <!--top navbar-->
+  <nav>
+  <div class="navbar bg-base-100">
+    <div class="navbar-start">
+      <div class="dropdown">
+        <div tabindex="0" role="button" class="btn btn-ghost lg:hidden">
+          <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h8m-8 6h16" /></svg>
+        </div>
+        <ul tabindex="0" class="menu menu-sm dropdown-content mt-3 z-[1] p-2 shadow bg-base-100 rounded-box w-52">
+          <li><a>Home</a></li>
+          <li>
+            <a>Portfolio</a>
+            <ul class="p-2">
+              <li><a>Submenu 1</a></li>
+              <li><a>Submenu 2</a></li>
             </ul>
-          </div>
-          <a class="btn btn-ghost text-xl">daisyUI</a>
-        </div>
-        <div class="navbar-center lg:flex">
-          <ul class="menu menu-horizontal px-1">
-            <li><a>Item 1</a></li>
-            <li>
-              <details>
-                <summary>Parent</summary>
-                <ul class="p-2">
-                  <li><a>Submenu 1</a></li>
-                  <li><a>Submenu 2</a></li>
-                </ul>
-              </details>
-            </li>
-            <li><a>Item 3</a></li>
-          </ul>
-        </div>
-        <div class="navbar-end">
-          <button class="btn btn-ghost btn-circle">
-            <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M21 21l-6-6m2-5a7 7 0 11-14 0 7 7 0 0114 0z" /></svg>
-          </button>
-          <a class="btn">Button</a>
-        </div>
+          </li>
+          <li><a>About us</a></li>
+        </ul>
       </div>
-    </nav>
+      <a class="btn btn-ghost text-xl">AMBITION</a>
+    </div>
+    <div class="navbar-center hidden lg:flex">
+      <ul class="menu menu-horizontal px-1">
+        <li><a>Home</a></li>
+        <li>
+          <details>
+            <summary>Sub Menu</summary>
+            <ul class="p-2 absolute z-50">
+              <li><a>Submenu 1</a></li>
+              <li><a>Submenu 2</a></li>
+            </ul>
+          </details>
+        </li>
+        <li><a>About us</a></li>
+      </ul>
+    </div>
+    <div class="navbar-end">
+      <button class="btn btn-ghost btn-circle">
+        <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M21 21l-6-6m2-5a7 7 0 11-14 0 7 7 0 0114 0z" /></svg>
+      </button>
+      <a class="btn bg-orange-500 ">Button</a>
+    </div>
+  </div>
+  </nav> 
   </header>
      <!--slider-->
-    <section class="-z-50">
-      <div class="carousel w-full align-middle overflow-hidden relative" style="height: 350px; ">
+    <section class="">
+      <div class="carousel relative w-full align-middle overflow-hidden relative" style="height: 350px; ">
         <div id="slide1" class="carousel-item relative w-full">
           <img src="Images/1.png" class="w-full" />
           <div class="absolute flex justify-between transform -translate-y-1/2 left-5 right-5 top-1/2">
@@ -89,7 +89,7 @@
         </div>
          
       </div>
-      <div class="bg-slate-700 rounded-e-full text-white w-96 float-end p-6 text-justify opacity-60 right-40 top-48 absolute">
+      <div class="bg-slate-700 rounded-md text-white w-96 float-end p-6 text-justify opacity-60 xl: right-48 top-48 absolute sm: -mr-32">
         <h2 class="text-2xl bottom-16">Welcome To Our Exclusive website</h2>
         <p class="font-light text-sm">I'm Md Monir Hossain. I'm Expert Exclusive Website Design. I'm create your business website. </p>
       </div>
@@ -101,11 +101,67 @@
       </div>
     </section>
     <section>
-      <div class="space-x-60 text-center bg-red-200 overflow-hidden">
-        <div class="radial-progress text-primary" style="--value:90;" role="progressbar">70%</div>
-        <div class="radial-progress text-blue-600" style="--value:80;" role="progressbar">90%</div>
-        <div class="radial-progress text-primary" style="--value:85;" role="progressbar">80%</div>
-        <div class="radial-progress text-primary" style="--value:95;" role="progressbar">85%</div>
+      <div class="flex justify-between  bg-red-200 overflow-hidden p-6">
+        <div class="grid">
+        <div class="radial-progress text-primary content-center" style="--value:90;" role="progressbar">70%</div>
+        <h2 class="p-2 text-4xl">html</h2>
+        <p>I'm Expert about html</p>
+        </div>
+        <div class="grid">
+        <div class="radial-progress text-blue-600 content-center" style="--value:80;" role="progressbar">90%</div>
+        <h2 class="p-2 text-4xl">css</h2>
+        <p>I'm Expert about css</p>
+        </div>
+        <div class="grid">
+        <div class="radial-progress text-primary content-center" style="--value:85;" role="progressbar">80%</div>
+        <h2 class="p-2 text-4xl">javascript</h2>
+        <p>I'm Expert about javascript</p>
+        </div>
+        <div class="grid">
+        <div class="radial-progress text-primary content-center" style="--value:95;" role="progressbar">85%</div>
+        <h2 class="p-2 text-4xl">php</h2>
+        <p>I'm Expert about php</p>
+        </div>
+      </div>
+    </section>
+    <section>
+      <div class="w-full p-12 text-center text-black overflow-hidden bg-slate-300">
+        <h2 class="text-2xl h-12 text-black">Welcome To Our Exclusive website</h2>
+        <p class="font-light text-sm text-black">I'm Md Monir Hossain. I'm Expert Exclusive Website Design. I'm create your business website. </p>
+      </div>
+    </section>
+    <section>
+      <div class="gallery_img content-between grid gap-3 grid-cols-1 md:grid-cols-2 lg: grid-cols-3">
+        <div class="card bg-base-100 shadow-xl ">
+          <figure><img src="Images/2.png" alt="Shoes" /></figure>
+          <div class="card-body text-center">
+            <h2 class="card-title justify-center">Nature Picture</h2>
+            <p>Very nice this picture</p>
+            <div class="card-actions justify-first">
+              <button class="bg-rose-400 w-40 p-3 text-zinc-50 rounded-2xl">Got It</button>
+            </div>
+          </div>
+        </div>
+        <div class="card bg-base-100 shadow-xl">
+          <figure><img src="Images/2.png" alt="Shoes" /></figure>
+          <div class="card-body text-center">
+            <h2 class="card-title justify-center">Nature Picture</h2>
+            <p>Very nice this picture</p>
+            <div class="card-actions justify-first">
+              <button class=" bg-rose-400 w-40 p-3 text-zinc-50 rounded-2xl" >Got It</button>
+            </div>
+          </div>
+        </div>
+        <div class="card bg-base-100 shadow-xl">
+          <figure><img class="w-full" src="Images/2.png" alt="Shoes" /></figure>
+          <div class="card-body text-center w-full ">
+            <h2 class="card-title justify-center">Nature Picture</h2>
+            <p>Very nice this picture</p>
+            <div class="card-actions justify-first">
+              <button class="bg-rose-400 w-40 p-3 text-zinc-50 rounded-2xl">Got It</button>
+            </div>
+          </div>
+        </div>
       </div>
     </section>
 </body>
